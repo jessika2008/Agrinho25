@@ -1,0 +1,161 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tema-secao {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.tema-secao h2 {
+    color: #0056b3; /* Cor para títulos de seção */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.tema-secao .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.tema-secao .conteudo img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tema-secao .conteudo p {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.tema-secao ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.tema-secao ul li {
+    background-color: #e2f0ff; /* Cor de fundo para itens de lista */
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-left: 5px solid #0056b3;
+    border-radius: 4px;
+}
+
+/* Estilos específicos para a seção Campo */
+#campo {
+    background-color: #e6ffe6; /* Um verde claro para o campo */
+}
+
+#campo h2 {
+    color: #28a745; /* Um verde mais escuro para o título do campo */
+}
+
+#campo .conteudo img {
+    border: 3px solid #28a745;
+}
+
+/* Estilos específicos para a seção Cidade */
+#cidade {
+    background-color: #e6f7ff; /* Um azul claro para a cidade */
+}
+
+#cidade h2 {
+    color: #007bff; /* Um azul mais escuro para o título da cidade */
+}
+
+#cidade .conteudo img {
+    border: 3px solid #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 50px 0;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .tema-secao .conteudo {
+        flex-direction: column;
+    }
+
+    .tema-secao .conteudo p,
+    .tema-secao .conteudo img {
+        max-width: 100%;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .tema-secao h2 {
+        font-size: 2em;
+    }
+      }
